@@ -40,26 +40,5 @@
         }
       }
     }
-  },
-  "opera": {
-    "default": "86.0",
-    "versions": {
-      "86.0": {
-        "image": "selenoid/opera:86.0",
-        "port": "4444",
-        "path": "/",
-        "tmpfs": {
-          "/tmp": "size=256m"
-        }
-      },
-      "85.0": {
-        "image": "selenoid/opera:85.0",
-        "port": "4444",
-        "path": "/",
-        "tmpfs": {
-          "/tmp": "size=256m"
-        }
-      }
-    }
   }
 }
