@@ -5,7 +5,7 @@ selenoid-start: cm
 	# configure and run Selenoid with next flags:
 	# 	--vnc to download images with VNC server (to see live browser screen)
 	# 	--browsers-json path/to/browsers.json to use an existing configuration file
-	./cm selenoid start --vnc --browsers-json browsers.json
+	./cm selenoid start --vnc --browsers-json config/browsers.json
 	# run Selenoid UI
 	./cm selenoid-ui start
 
