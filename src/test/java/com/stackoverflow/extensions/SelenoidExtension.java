@@ -10,7 +10,7 @@ import java.util.Map;
 import static com.codeborne.selenide.Configuration.browserCapabilities;
 import static java.lang.String.format;
 
-public class SelenideExtension implements BeforeAllCallback {
+public class SelenoidExtension implements BeforeAllCallback {
   private final CustomConfig config = CustomConfig.getInstance();
 
   @Override
