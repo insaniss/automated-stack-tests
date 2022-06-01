@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Configuration.browserCapabilities;
 import static java.lang.String.format;
 
 public class SelenideExtension implements BeforeAllCallback {
-  private static final CustomConfig config = CustomConfig.getInstance();
+  private final CustomConfig config = CustomConfig.getInstance();
 
   @Override
   public void beforeAll(ExtensionContext context) throws Exception {
