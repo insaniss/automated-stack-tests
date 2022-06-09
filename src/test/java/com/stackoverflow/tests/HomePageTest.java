@@ -1,8 +1,8 @@
 package com.stackoverflow.tests;
 
 import com.stackoverflow.pages.HomePage;
-import io.qameta.allure.Description;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
@@ -16,8 +16,8 @@ public class HomePageTest {
   void setUp() {
   }
 
-  @Description("Test the navigation open function")
-  @ParameterizedTest(name = "[{index}] navName={0}, titleName={1}")
+  @DisplayName("Test the navigation open function")
+  @ParameterizedTest(name = "[{index}] navName: {0}, titleName: {1}")
   @CsvSource({
       "nav-questions,All Questions",
       "nav-tags,Tags",
@@ -32,8 +32,8 @@ public class HomePageTest {
         .shouldBe(visible);
   }
 
-  @Description("Test searching the existing user")
-  @ParameterizedTest(name = "[{index}] username={0}")
+  @DisplayName("Test searching the existing user")
+  @ParameterizedTest(name = "[{index}] username: {0}")
   @CsvSource({
       "maestro",
       "corecudr",
@@ -47,8 +47,8 @@ public class HomePageTest {
         .shouldNotBe(visible);
   }
 
-  @Description("Test for doesn't existing user search")
-  @ParameterizedTest(name = "[{index}] username={0}")
+  @DisplayName("Test for doesn't existing user search")
+  @ParameterizedTest(name = "[{index}] username: {0}")
   @CsvSource({
       "notfalse",
       "brandgreg"
