@@ -3,7 +3,6 @@ package com.stackoverflow.tests;
 import com.stackoverflow.pages.HomePage;
 import io.qameta.allure.Description;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
