@@ -4,6 +4,7 @@ import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Selenide.$x;
+import static java.lang.String.format;
 
 public class HomePage {
   public SelenideElement usersNav = $x("//*[@id='nav-users']");
@@ -16,7 +17,7 @@ public class HomePage {
   }
 
   public HomePage clickNav(String id) {
-    $x(String.format("//*[@id='%s']", id)).click();
+    $x(format("//*[@id='%s']", id)).click();
     return this;
   }
 
@@ -31,7 +32,7 @@ public class HomePage {
   }
 
   public SelenideElement titleWithText(String title) {
-    return $x(String.format("//h1[contains(text(),'%s')]", title));
+    return $x(format("//h1[contains(text(),'%s')]", title));
   }
 
   public SelenideElement emptyState() {
