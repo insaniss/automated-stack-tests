@@ -30,7 +30,7 @@ chmod +x cm
 
 Run one command to start Selenoid:
 ```shell
-./cm selenoid start --nvc
+./cm selenoid start --vnc
 ```
 
 Optionally run one more command to start Selenoid UI:
@@ -63,7 +63,7 @@ _browsers.json_
 
 Run `cm` with `--browsers-json` flag:
 ```shell
-./cm selenoid start --nvc --browsers-json /path/to/browsers.json
+./cm selenoid start --vnc --browsers-json /path/to/browsers.json
 ```
 
 [aerokube-cm]: http://aerokube.com/cm/latest/
